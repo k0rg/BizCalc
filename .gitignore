@@ -1,0 +1,6 @@
+node_modules/
+dist/
+snapshots/
+data/naics/naics_codes.json
+*.js.map
+*.d.ts.map
