@@ -1,0 +1,37 @@
+{
+  "name": "bizcalc",
+  "version": "1.0.0",
+  "description": "Business listing parser and valuation calculator",
+  "main": "dist/index.js",
+  "bin": {
+    "bizcalc": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "cli": "node dist/cli.js",
+    "test": "node --test dist/adapters/utils.test.js dist/snapshot/index.test.js dist/adapters/adapters.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k0rg/BizCalc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/k0rg/BizCalc/issues"
+  },
+  "homepage": "https://github.com/k0rg/BizCalc#readme",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.35",
+    "@types/node": "^25.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
